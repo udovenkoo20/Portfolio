@@ -1,0 +1,205 @@
+body,
+html {
+  height: 100%;
+  margin: 0 auto;
+  background-color: var(--sky-color);
+}
+:root {
+  --primary-color: #373737;
+  --secondary-color: #fdfdfd;
+  --accent-colour: #e0791c;
+  --sky-color: #f5f6f8;
+  --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  --main-heading-font-family: "Prata", serif;
+  --sub-heading-font-family: "Montserrat", sans-serif;
+  --body-font-family: "Montserrat", sans-serif;
+  --sub-heading-font-weight: 600;
+  --body-font-weight: 300;
+}
+.navbar-brand {
+  color: var(--accent-colour);
+  font-family: var(--main-heading-font-family);
+}
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  font-weight: 500;
+  line-height: 1.2;
+  margin-bottom: 0.5rem;
+}
+
+.cont {
+  background-image: url("/img/back.jpg");
+  background-size: cover;
+  margin-top: -20px;
+  height: 100%;
+}
+
+.all {
+  margin: 20px;
+  padding-top: 60px;
+}
+@media (max-width: 576px) {
+  .cont {
+    background-image: none;
+    background-color: var(--sky-color);
+    text-align: center;
+    background-size: cover;
+    height: 100%;
+  }
+}
+.h2-heading {
+  font-size: 35px;
+  text-align: left;
+  height: 80px;
+  font-family: var(--sub-heading-font-family);
+}
+@media (max-width: 576px) {
+  .h2-heading {
+    font-size: 26px;
+    padding-top: 58px;
+    text-align: center !important;
+  }
+}
+.main-heading {
+  color: var(--accent-colour);
+  font-size: 96px;
+  font-family: "Prata", serif;
+  text-align: left;
+}
+@media (max-width: 576px) {
+  .main-heading {
+    font-size: 48px;
+    text-align: center !important;
+  }
+}
+.sub-heading {
+  font-size: 28px;
+  opacity: 0.7;
+  text-align: left;
+}
+@media (max-width: 576px) {
+  .sub-heading {
+    font-size: 16px;
+    text-align: center !important;
+  }
+}
+
+.navigation-links {
+  display: flex;
+  justify-content: flex-start;
+
+  margin-top: 80px;
+  font-size: 18px;
+}
+.link-style-1 {
+  color: var(--accent-colour);
+  border: 1px solid var(--accent-colour);
+  box-shadow: var(--box-shadow);
+  transition: 150ms ease-in-out;
+  padding: 15px 23px;
+  margin-right: 40px;
+  margin-left: 40px;
+  text-decoration: none;
+  border-radius: 10px;
+  background-color: var(--sky-color);
+}
+.link-style-2 {
+  background: var(--accent-colour);
+  box-shadow: var(--box-shadow);
+  color: var(--secondary-color);
+  transition: 150ms ease-in-out;
+  padding: 15px 23px;
+  text-decoration: none;
+  border-radius: 10px;
+}
+@media (max-width: 576px) {
+  .navigation-links {
+    margin-top: 20px;
+    font-size: x-small;
+    font-size: 12px;
+    justify-content: center;
+  }
+  .link-style-1 {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+}
+.link-style-1:hover {
+  background: var(--accent-colour);
+  box-shadow: var(--box-shadow);
+  color: var(--secondary-color);
+  transition: 150ms ease-in-out;
+}
+.link-style-2:hover {
+  color: var(--accent-colour);
+  background-color: var(--secondary-color);
+  border: 1px solid var(--accent-colour);
+  box-shadow: var(--box-shadow);
+  transition: 150ms ease-in-out;
+  transition: 150ms ease-in-out;
+}
+.read-more {
+  margin: 0;
+  text-decoration: none;
+  font-family: var(--body-font-family);
+  color: var(--primary-color);
+  position: absolute;
+  bottom: 0;
+}
+
+.read-more:hover {
+  color: var(--accent-colour);
+}
+@media (max-width: 576px) {
+  .read-more {
+    display: none;
+  }
+}
+#photo {
+  width: 400px;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+.content-heading {
+  color: var(--accent-colour);
+  font-family: var(--main-heading-font-family) !important;
+  text-align: right;
+}
+@media (max-width: 576px) {
+  .content-heading {
+    font-size: 32px;
+    text-align: center !important;
+    padding: 5px;
+  }
+}
+.about-me-text {
+  font-family: var(--body-font-family);
+  text-align: right;
+  color: #373737;
+  opacity: 0.7;
+  padding-right: 50px;
+  border-right: 1px solid #373737;
+}
+@media (max-width: 576px) {
+  .about-me-text {
+    text-align: left;
+    font-size: 12px;
+    padding: 20px;
+  }
+}
+@media (min-width: 992px) {
+  #content {
+    padding-right: 150px;
+  }
+}
