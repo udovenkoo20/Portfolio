@@ -86,7 +86,9 @@ h6 {
     border: none;
   }
 }
-
+.weather {
+  margin-top: 70px;
+}
 .subtitle-weather {
   color: var(--accent-colour);
   font-family: var(--main-heading-font-family) !important;
@@ -189,4 +191,10 @@ a {
 }
 .dictionary {
   margin-top: 70px;
+}
+.sub-4 {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
 }
